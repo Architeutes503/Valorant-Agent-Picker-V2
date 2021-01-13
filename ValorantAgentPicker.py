@@ -58,15 +58,14 @@ sovaMouseY = coordinates[23]
 viperMouseX = coordinates[24]
 viperMouseY = coordinates[25]
 
+#Yoru
+yoruMouseX = coordinates[26]
+yoruMouseY = coordinates[27]
+
 #LockIn
-lockMouseX = coordinates[26]
-lockMouseY = coordinates[27]
+lockMouseX = coordinates[28]
+lockMouseY = coordinates[29]
 
-
-# print(breachMouseX,breachMouseY,brimstoneMouseX,brimstoneMouseY,cypherMouseX,
-# cypherMouseY,jettMouseX,jettMouseY,killjoyMouseX,killjoyMouseY,omenMouseX,omenMouseY,
-# phoenixMouseX,phoenixMouseY,razeMouseX,razeMouseY,reynaMouseX,reynaMouseY,sageMouseX,sageMouseY,
-# skyeMouseX,skyeMouseY,sovaMouseX,sovaMouseY,viperMouseX,viperMouseY, lockMouseX, lockMouseY)
 
 print("Which agent do you want?")
 print("1 -->  Breach")
@@ -82,6 +81,7 @@ print("10 --> Sage")
 print("11 --> Skye")
 print("12 --> Sova")
 print("13 --> Viper")
+print("14 --> Yoru")
 
 inputStr = input()
 input = int(inputStr)
@@ -229,6 +229,17 @@ elif input == 13:
     print("You chose Viper.")
     while counter <= 50:
         pyautogui.moveTo(int(viperMouseX), int(viperMouseY))
+        pyautogui.click()
+        pyautogui.moveTo(int(lockMouseX), int(lockMouseY))
+        pyautogui.click()
+        counter = counter + 1
+
+
+#Yoru
+elif input == 14:
+    print("You chose Yoru.")
+    while counter <= 50:
+        pyautogui.moveTo(int(yoruMouseX), int(yoruMouseY))
         pyautogui.click()
         pyautogui.moveTo(int(lockMouseX), int(lockMouseY))
         pyautogui.click()
