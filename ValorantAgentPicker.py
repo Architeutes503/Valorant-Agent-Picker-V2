@@ -83,14 +83,13 @@ print("12 --> Sova")
 print("13 --> Viper")
 print("14 --> Yoru")
 
-inputStr = input()
-input = int(inputStr)
+userInput = input()
 counter = 0
 
 time.sleep(1)
 
 #Breach
-if input == 1:
+if userInput == "1":
     print("You chose Breach.")
     while counter <= 50:
         pyautogui.moveTo(int(breachMouseX), int(breachMouseY))
@@ -103,7 +102,7 @@ if input == 1:
 
 
 #Brimstone
-elif input == 2:
+elif userInput == "2":
     print("You chose Brimstone.")
     while counter <= 50:
         pyautogui.moveTo(int(brimstoneMouseX), int(brimstoneMouseY))
@@ -114,7 +113,7 @@ elif input == 2:
 
 
 #Cypher
-elif input == 3:
+elif userInput == "3":
     print("You chose Cypher.")
     while counter <= 50:
         pyautogui.moveTo(int(cypherMouseX), int(cypherMouseY))
@@ -125,7 +124,7 @@ elif input == 3:
 
 
 #Jett
-elif input == 4:
+elif userInput == "4":
     print("You chose Jett.")
     while counter <= 50:
         pyautogui.moveTo(int(jettMouseX), int(jettMouseY))
@@ -136,7 +135,7 @@ elif input == 4:
 
 
 #Killjoy
-elif input == 5:
+elif userInput == "5":
     print("You chose Killjoy.")
     while counter <= 50:
         pyautogui.moveTo(int(killjoyMouseX), int(killjoyMouseY))
@@ -147,7 +146,7 @@ elif input == 5:
 
 
 #Omen
-elif input == 6:
+elif userInput == "6":
     print("You chose Omen.")
     while counter <= 50:
         pyautogui.moveTo(int(omenMouseX), int(omenMouseY))
@@ -158,7 +157,7 @@ elif input == 6:
 
 
 #Phoenix
-elif input == 7:
+elif userInput == "7":
     print("You chose Phoenix.")
     while counter <= 50:
         pyautogui.moveTo(int(phoenixMouseX), int(phoenixMouseY))
@@ -169,7 +168,7 @@ elif input == 7:
 
 
 #Raze
-elif input == 8:
+elif userInput == "8":
     print("You chose Raze.")
     while counter <= 50:
         pyautogui.moveTo(int(razeMouseX), int(razeMouseY))
@@ -180,7 +179,7 @@ elif input == 8:
 
 
 #Reyna
-elif input == 9:
+elif userInput == "9":
     print("You chose Reyna.")
     while counter <= 50:
         pyautogui.moveTo(int(reynaMouseX), int(reynaMouseY))
@@ -191,7 +190,7 @@ elif input == 9:
 
 
 #Sage
-elif input == 10:
+elif userInput == "10":
     print("You chose Sage.")
     while counter <= 50:
         pyautogui.moveTo(int(sageMouseX), int(sageMouseY))
@@ -202,7 +201,7 @@ elif input == 10:
 
 
 #Skye
-elif input == 11:
+elif userInput == "11":
     
     print("You chose Skye.")
     while counter <= 50:
@@ -214,7 +213,7 @@ elif input == 11:
 
 
 #Sova
-elif input == 12:
+elif userInput == "12":
     print("You chose Sova.")
     while counter <= 50:
         pyautogui.moveTo(int(sovaMouseX), int(sovaMouseY))
@@ -225,7 +224,7 @@ elif input == 12:
 
 
 #Viper
-elif input == 13:
+elif userInput == "13":
     print("You chose Viper.")
     while counter <= 50:
         pyautogui.moveTo(int(viperMouseX), int(viperMouseY))
@@ -236,7 +235,7 @@ elif input == 13:
 
 
 #Yoru
-elif input == 14:
+elif userInput == "14":
     print("You chose Yoru.")
     while counter <= 50:
         pyautogui.moveTo(int(yoruMouseX), int(yoruMouseY))
@@ -248,4 +247,10 @@ elif input == 14:
 
 #InvalidAgent
 else:
-    print("This isnt a valid agent.")
+    print("You chose Yoru.")
+    while counter <= 50:
+        pyautogui.moveTo(int(yoruMouseX), int(yoruMouseY))
+        pyautogui.click()
+        pyautogui.moveTo(int(lockMouseX), int(lockMouseY))
+        pyautogui.click()
+        counter = counter + 1
